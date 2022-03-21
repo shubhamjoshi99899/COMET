@@ -1,0 +1,363 @@
+/*
+
+Known Template 
+
+https://templatemo.com/tm-516-known
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Muli:300,700|Nunito');
+
+body {
+  background: #ffffff;
+  font-family: 'Nunito', sans-serif;
+  overflow-x: hidden;
+  padding-top: 70px;
+  padding-bottom: 0;
+}
+
+
+/*---------------------------------------
+   TYPOGRAPHY              
+-----------------------------------------*/
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Muli', sans-serif;
+  font-weight: bold;
+  line-height: inherit;
+}
+
+h1 {
+  color: #252525;
+  font-size: 3em;
+  line-height: normal;
+}
+
+h2 {
+  color: #353535;
+  font-size: 3em;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+
+h3,
+h3 a {
+  color: #454545;
+}
+
+p {
+  color: #757575;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+
+
+/*---------------------------------------
+   GENERAL               
+-----------------------------------------*/
+
+html{
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: #252525;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-decoration: none !important;
+}
+
+a,
+input, button,
+.form-control {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+a:hover, a:active, a:focus {
+  color: #29ca8e;
+  outline: none;
+}
+
+::-webkit-scrollbar{
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background: #000000;
+}
+
+.section-title {
+  padding-bottom: 40px;
+}
+
+.section-title h2 {
+  margin: 0;
+}
+
+.section-title small {
+  display: block;
+}
+
+
+
+section {
+  position: relative;
+  padding: 100px 0;
+}
+
+#team,
+#testimonial {
+  background: #f9f9f9;
+}
+
+#team, 
+#testimonial {
+  text-align: center;
+}
+
+#google-map iframe {
+  border: 0;
+  width: 100%;
+  height: 390px;
+}
+
+
+
+/*---------------------------------------
+   BUTTONS               
+-----------------------------------------*/
+
+.section-btn {
+  background: transparent;
+  border-radius: 50px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: inherit;
+  font-weight: normal;
+  padding: 15px 30px;
+  transition: 0.5s;
+}
+
+.section-btn:hover {
+  background: #ffffff;
+  border-color: transparent;
+}
+
+
+
+/*---------------------------------------
+     PRE LOADER              
+-----------------------------------------*/
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background: none repeat scroll 0 0 #ffffff;
+}
+
+.spinner {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  position: relative;
+}
+
+.spinner:before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 45px;
+  height: 45px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 50%;
+  border: 1px solid #575757;
+  border-top-color: #ffffff;
+  animation: spinner .9s linear infinite;
+}
+
+@-webkit-@keyframes spinner {
+  to {transform: rotate(360deg);}
+}
+
+@keyframes spinner {
+  to {transform: rotate(360deg);}
+}
+
+
+
+
+/*---------------------------------------
+    CONTACT             
+-----------------------------------------*/
+
+#contact {
+  background: #3f51b5;
+  
+}
+
+#contact h2 {
+  color: #ffffff;
+  text-align: center;
+}
+
+#contact .section-title {
+  padding-bottom: 20px;
+}
+
+#contact h2 > small,
+#contact p,
+#contact a {
+  color: #f9f9f9;
+}
+
+#contact-form {
+  padding: 1em 0;
+  color: rgb(255, 0, 0);
+}
+
+
+#contact-form .col-md-12,
+#contact-form .col-md-4 {
+  padding-left: 0;
+}
+
+
+#contact-form .form-control{
+  color: #8d8787;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: none;
+  margin: 10px 0;
+  height: 50px;
+  font-size: large;
+}
+#contact-form .col-md-12 .col-sm-12{
+       height: 1200px;
+}
+
+#contact-form .form-control select option{
+  border: 0;
+  border-radius: 5px;
+  box-shadow: none;
+  margin: 10px 0;
+}
+
+#contact-form .form-control select{
+ border:0px;
+ width: inherit;
+ outline: 0px;
+ margin-top: 10px;
+}
+.input--style-1{
+  outline: none;
+}
+
+#contact-form .select-dropdown{
+  
+  border-radius: 5px;
+  box-shadow: none;
+  margin: 10px 0;
+  height: 200px;
+}
+
+#contact-form input {
+  height: 50px;
+}
+
+
+
+
+#contact-form  .input-group{
+  color: #575757;
+  font-size: large;
+  width:inherit;
+
+}
+.form-control .input{
+  border-radius: 5px;
+  box-shadow: none;
+  margin: 10px 0;
+  outline: 0;
+  font-size: large;
+  color: #000000;
+}
+#contact-form input[type='submit'] {
+  border-radius: 50px;
+  border: 1px solid transparent;
+}
+
+#contact-form input[type='submit']:hover {
+  background: #29ca8e;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+#contact .contact-image{
+  margin-top: 60px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .col-md-6 .col-sm-12 .input-group .form-control input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 779px){
+    .input-group { width: 900%; }
+}
+
+
+
+/*---------------------------------------
+   RESPONSIVE STYLES              
+-----------------------------------------*/
+
+
+  .contact-image {
+    margin-top: 50px;
+  }
+}
+
+
+  .entry-form {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
+@media only screen and (max-width: 580px) {
+  h2 {
+    font-size: 1.8em;
+  }
+
+  #testimonial .item {
+    padding: 2em;
+  }
+
+  .contact-image {
+    margin-top: 0;
+  }
+}
+
